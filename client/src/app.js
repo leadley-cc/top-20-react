@@ -1,9 +1,10 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
+import React from "react"
+import ReactDOM from "react-dom"
+import ChartContainer from "./containers/ChartContainer"
 
-window.addEventListener('load', function () {
+window.addEventListener("load", function () {
   ReactDOM.render(
-    <h1>App Started</h1>,
-    document.getElementById('app')
-  );
-});
+    <ChartContainer />,
+    document.getElementById("app")
+  )
+})

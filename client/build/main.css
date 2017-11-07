@@ -1,0 +1,68 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Lucida Grande";
+  background-color: wheat;
+}
+
+h1 {
+  text-align: center;
+  color: tomato;
+  margin: 0.5em 0;
+}
+
+ol {
+  font-size: 14px;
+  counter-reset: item;
+  list-style: none;
+}
+
+li.song-display {
+  counter-increment: item;
+  margin: 2px 0;
+}
+
+li.song-display:before {
+  padding-right: 1em;
+  content: counter(item);
+  width: 2em;
+  text-align: right;
+  display: inline-block;
+}
+
+a.artist-name, a.song-name {color: black;
+  text-align: center;
+  display: inline-block;
+  padding: 0.4em;
+  text-decoration: none;
+  border-radius: 2px;
+
+  transition-property: background-color, color;
+  transition-duration: 0.1s;
+  transition-timing-function: ease;
+}
+
+a.artist-name:hover, a.song-name:hover {
+  color: tomato;
+  background-color: #f7e4c2;
+}
+
+a.artist-name {
+  width: 17em;
+}
+
+a.song-name {
+  width: 23em;
+}
+
+audio {
+  margin-bottom: -11px;
+}
+
+audio::-webkit-media-controls-panel {
+  background-color: wheat;
+}
